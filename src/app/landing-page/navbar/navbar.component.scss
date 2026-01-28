@@ -1,0 +1,47 @@
+@mixin dFlex($jc, $ai: center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+nav {
+    padding: 12px;
+    @include dFlex(space-between);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+
+    >div {
+        display: flex;
+        align-items: center;
+
+        >a {
+            text-decoration: none;
+            color: white;
+
+
+            &:hover {
+                color: #9F0908;
+
+            }
+        }
+    }
+}
+
+.navigation-bar {
+    font-family: "raleway", sans-serif;
+    gap: 12px;
+}
+
+.change_language_button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        color: #9F0908;
+    }
+}
