@@ -4,44 +4,60 @@
     align-items: $ai;
 }
 
+.dNone {
+    display: none;
+}
+
 nav {
-    padding: 12px;
+    max-width: 1440px;
+    height: 109px;
     @include dFlex(space-between);
-    position: absolute;
+    position: fixed;
     top: 0px;
-    right: 0px;
-    left: 0px;
+    left: 37px;
+    right: 37px;
 
     >div {
         display: flex;
         align-items: center;
 
-        >a {
-            text-decoration: none;
-            color: white;
 
-
-            &:hover {
-                color: #9F0908;
-
-            }
-        }
     }
 }
 
 .navigation-bar {
-    font-family: "raleway", sans-serif;
-    gap: 12px;
+    gap: 92px;
+}
+
+.navigation-links {
+    display: flex;
+    font-size: 24px;
+    gap: 29px;
+
+    >a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-style: normal;
+
+
+
+        &:hover {
+            color: #70e71a;
+        }
+    }
 }
 
 .change_language_button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 16px;
+    height: 32px;
+    width: 92px;
     cursor: pointer;
+}
 
-    &:hover {
-        color: #9F0908;
-    }
+.purple-dot {
+    color: #9747ff;
+}
+
+.green-r {
+    color: #70e71a;
 }

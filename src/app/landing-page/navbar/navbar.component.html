@@ -1,12 +1,22 @@
 <nav>
-    <h1>Oliver</h1>
+    <h1>
+        <span>Ol</span><span class="purple-dot">i</span><span>ve</span><span class="green-r">r</span>
+    </h1>
+
+
     <div class="navigation-bar">
-        <a href="#how_to_order">About me</a>
-        <a href="#menu">Skills</a>
-        <a href="#about">Portfolio</a>
-        <div class="change_language_button">
-            <img src="./../../../assets/img/de_inactive.png" alt="">
-            <button>EN</button>
+
+        <div class="navigation-links">
+            <a href="#">About me</a>
+            <a href="#">Skills</a>
+            <a href="#">Portfolio</a>
         </div>
+
+        <div (click)="toggleLanguageIcon()" class="change_language_button">
+            <img id="de_active" src="./../../../assets/icons/de_active.png" alt="">
+            <img id="en_active" class="dNone" src="./../../../assets/icons/en_active.png" alt="">
+        </div>
+
     </div>
+
 </nav>

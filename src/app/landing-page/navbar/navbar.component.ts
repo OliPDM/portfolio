@@ -8,6 +8,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
 
+
+export class NavbarComponent {
+  toggleLanguageIcon() {
+    document.getElementById('de_active')?.classList.toggle('dNone');
+    document.getElementById('en_active')?.classList.toggle('dNone');
+  }
 }
