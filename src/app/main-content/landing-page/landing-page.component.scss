@@ -1,54 +1,77 @@
 section {
+    width: 100%;
     max-width: 1440px;
     height: 610px;
-    top: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: #141D2F;
+    margin: 0 auto;
 
-}
+    .links {
+        width: 373px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 42px;
+        left: 0;
+        position: relative;
 
-h1 {
-    font-weight: 700;
-    font-size: 128px;
-}
+        >img {
+            width: 100px;
+            height: 2px;
+        }
 
-h2 {
-    color: #9747FF;
-    font-weight: 400;
-    font-size: 64px;
-}
+        >a {
+            transition: transform 0.1s ease-in-out;
 
-.headlines {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    left: 103px;
-    right: 103px;
-}
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
 
-button {
-    cursor: pointer;
-    color: white;
-    height: 58px;
-    opacity: 1;
-    gap: 10px;
-    border-radius: 10px;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    background-color: #70E61C;
-    font-size: 23px;
-    line-height: 120%;
-    transition: transform 0.3s ease-in-out;
-    border: none;
+    h1 {
+        font-weight: 700;
+        font-size: 128px;
+    }
 
-    &:hover {
-        background-color: #9747FF;
-        transform: scale(1.15);
+    h2 {
+        color: #9747FF;
+        font-weight: 400;
+        font-size: 64px;
+    }
 
-        ;
+    .headlines {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        left: 103px;
+        right: 103px;
+    }
+
+    button {
+        cursor: pointer;
+        color: white;
+        height: 58px;
+        opacity: 1;
+        gap: 10px;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        background-color: #70E61C;
+        font-size: 23px;
+        line-height: 120%;
+        transition: transform 0.3s ease-in-out;
+        border: none;
+
+        &:hover {
+            background-color: #9747FF;
+            transform: scale(1.15);
+        }
     }
 }
