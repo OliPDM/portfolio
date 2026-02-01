@@ -9,7 +9,6 @@
 }
 
 nav {
-    max-width: 1440px;
     height: 109px;
     @include dFlex(space-between);
     position: fixed;
